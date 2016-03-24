@@ -1,0 +1,38 @@
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a>Welcome {{ staff.name }},</a></li>
+            <li><a>Login Time: {{ staff.loginTime }}</a></li>
+            <li><a href="#" ng-click="staff.login()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome</h1>
+    </div>
+
+    <style>.nav-pills>li>a{ border:1px solid; }</style>
+    <div class="wrapper row">
+        <div class="sidebar-wrapper col-xs-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li>
+                    <a href="#"><span class="fa fa-align-justify"></span> Menu</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-qrcode"></span> QR Code</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-wrapper col-xs-9">
+
+            <button class="btn" ng-click="generate_qr()">Generate QR Code</button>
+
+        </div>
+
+    </div>
+
+</div>
